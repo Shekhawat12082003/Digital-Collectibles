@@ -45,3 +45,21 @@ async function sendTransaction(privateKey, payload) {
     const signedTxn = await client.signTransaction(account, txn);
     return await client.submitTransaction(signedTxn);
 }
+
+async function connectWallet() {
+    if (!window.welldone) {
+        alert("Please install the Welldone Wallet extension!");
+        return;
+    }
+    try {
+        // Request connection to the wallet
+        const accounts = await window.welldone.solana.connect();
+        if (accounts.length > 0) {
+            document.getElementById("walletAddress").innerText = "Connected: " + accounts[0];
+        } else {
+            document.getElementById("walletAddress").innerText = "Connection failed.";
+        }
+    } catch (error) {
+        console.error("Wallet connection failed:", error);
+    }
+}
