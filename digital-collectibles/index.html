@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Collectibles Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mint and Transfer Digital Collectibles</h1>
+
+        <div class="form-container">
+            <h2>Mint Collectible</h2>
+            <input type="text" id="privateKey" placeholder="Your Private Key">
+            <input type="text" id="metadata" placeholder="Metadata (e.g., Image URL)">
+            <button onclick="mintCollectible()">Mint NFT</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Transfer Collectible</h2>
+            <input type="text" id="fromPrivateKey" placeholder="Your Private Key">
+            <input type="text" id="toAddress" placeholder="Recipient Address">
+            <button onclick="transferCollectible()">Transfer NFT</button>
+        </div>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
