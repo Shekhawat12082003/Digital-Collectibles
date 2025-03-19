@@ -1,0 +1,15 @@
+[package]
+name = "DigitalCollectibles"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule = "0x7b42373ecbdec78b7e0929529e952df4c02b1651b6e4097616179b5399e6df04"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
