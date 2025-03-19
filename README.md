@@ -27,8 +27,10 @@ Our vision is to revolutionize the digital collectibles industry by leveraging b
 - **Royalty System:** Enables creators to earn royalties on secondary sales.
 - **Search and Filters:** Advanced search and filtering options for an enhanced user experience.
 - **Gas Fee Optimization:** Implementation of Layer-2 solutions to reduce transaction costs.
-##Contract
-- **0x7b42373ecbdec78b7e0929529e952df4c02b1651b6e4097616179b5399e6df04
+  
+## Contract
+
+- 0x7b42373ecbdec78b7e0929529e952df4c02b1651b6e4097616179b5399e6df04
   ![image](https://github.com/user-attachments/assets/37bd96f4-5e07-46a2-bb48-3ac487d6a605)
 
   
